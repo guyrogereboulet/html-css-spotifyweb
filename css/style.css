@@ -5,6 +5,8 @@
 }
 
 
+/* FIXED */
+
 body {
   /* background-color: black; */
 }
@@ -13,6 +15,7 @@ body {
   height: 100vh;
   width: 100%;
   background-color: red;
+  overflow-y: scroll;
 }
 
 footer {
@@ -31,4 +34,11 @@ footer {
   height: calc(100% - 90px);
   width: 320px;
   background-color: yellow;
+}
+
+.main_right {
+  width: calc(100% - 320px);
+  margin-left: 320px;
+  padding: 20px;
+
 }
