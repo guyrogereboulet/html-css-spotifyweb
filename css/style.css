@@ -20,6 +20,9 @@ body {
 
 
 .main_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   left: 0;
   top: 0;
@@ -32,7 +35,6 @@ body {
   width: calc(100% - 320px);
   margin-left: 320px;
   padding: 20px;
-
 }
 
 footer {
@@ -62,4 +64,25 @@ footer {
   display: inline-block;
   background-color: white;
   font-size: 20px;
+}
+
+
+.top {
+  background-color: purple;
+}
+
+.space {
+  color: white;
+}
+
+
+.middle {
+  min-height: 100px;
+  overflow-y: auto;
+  background-color: lime;
+  flex-grow: 2;
+}
+
+.bottom {
+  background-color: orange;
 }
