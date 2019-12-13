@@ -11,6 +11,7 @@ body {
   background-color: black;
 }
 
+/*WRAPPER */
 .wrapper {
   height: 100vh;
   width: 100%;
@@ -18,7 +19,7 @@ body {
   overflow-y: scroll;
 }
 
-
+/*MAIN - LEFT */
 .main_left {
   display: flex;
   flex-direction: column;
@@ -31,21 +32,35 @@ body {
   background-color: yellow;
 }
 
+.top {
+  background-color: purple;
+}
+
+.space {
+  color: white;
+}
+
+.middle {
+  min-height: 100px;
+  overflow-y: auto;
+  background-color: lime;
+  flex-grow: 2;
+}
+
+.bottom {
+  background-color: orange;
+}
+
+
+
+/*MAIN - RIGHT */
 .main_right {
   width: calc(100% - 320px);
   margin-left: 320px;
   padding: 20px;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height:90px;
-  background-color: blue;
-}
-
+/*BANNER*/
 .banner {
   display: flex;
   align-items: center;
@@ -66,23 +81,12 @@ footer {
   font-size: 20px;
 }
 
-
-.top {
-  background-color: purple;
-}
-
-.space {
-  color: white;
-}
-
-
-.middle {
-  min-height: 100px;
-  overflow-y: auto;
-  background-color: lime;
-  flex-grow: 2;
-}
-
-.bottom {
-  background-color: orange;
+/*FOOTER*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:90px;
+  background-color: blue;
 }
