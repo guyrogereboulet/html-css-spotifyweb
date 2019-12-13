@@ -33,6 +33,20 @@ body {
 }
 
 .top {
+  display: flex;
+  list-style: none;
+}
+
+.top li {
+  flex-basis: 30px;
+
+}
+
+.top img {
+  width: 100%;
+}
+
+.top {
   background-color: purple;
 }
 
