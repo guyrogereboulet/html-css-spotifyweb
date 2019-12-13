@@ -30,24 +30,28 @@ body {
   height: calc(100% - 90px);
   width: 320px;
   background-color: yellow;
-}
-
-.top {
-  display: flex;
-  list-style: none;
-}
-
-.top li {
-  flex-basis: 30px;
-
-}
-
-.top img {
-  width: 100%;
+  padding: 20px;
 }
 
 .top {
   background-color: purple;
+  height:150px;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.top-container li {
+  flex-basis: 30px;
+}
+
+.top img {
+  width: 20%;
 }
 
 .space {
