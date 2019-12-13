@@ -27,10 +27,11 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  height: calc(100% - 90px);
+  height: calc(100% - 150px);
   width: 320px;
   background-color: yellow;
   padding: 20px;
+  margin-top: 60px;
 }
 
 .top {
@@ -44,6 +45,7 @@ body {
   list-style: none;
   justify-content: center;
   align-items: flex-start;
+  line-height: 20px;
 }
 
 .top-container li {
@@ -52,6 +54,34 @@ body {
 
 .top img {
   width: 20%;
+  vertical-align: middle;
+}
+
+
+.middle i {
+  font-size: 300%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.playlist {
+  list-style: none;
+  margin-left: 10px;
+  line-height: 30px;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  text-align: left;
+  padding-left: 20px;
+  background-color: grey;
+}
+
+.logo img {
+  height: 50px;
 }
 
 .space {
