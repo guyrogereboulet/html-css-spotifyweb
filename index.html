@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Spotify</title>
   </head>
   <body>
@@ -14,21 +18,31 @@
       <main>
         <div class="main_left">
           <div class="logo">
-            <img src="img/logo.svg" alt="">
+            <img class="hidden-xs" src="img/logo.svg" alt="">
+            <img class="visible-xs hidden-sm hidden-md hidden-lg" src="img/logo-small.svg" alt="">
+                <div class="text-left hidden-sm hidden-md hidden-lg">
+                  <img src="img/home.svg" alt="">
+                </div>
+                <div class="hidden-sm hidden-md hidden-lg">
+                  <img src="img/search.svg" alt="">
+                </div>
+                <div class="hidden-sm hidden-md hidden-lg">
+                  <img src="img/libreria.svg" alt="">
+                </div>
           </div>
           <div class="top">
-            <ul class="top-container">
+            <ul class="top-container hidden-xs">
               <li><a href="#"><img src="img/home.svg" alt=""> Home</a></li>
               <li><a href="#"><img src="img/search.svg" alt=""> Cerca</a></li>
               <li><a href="#"><img src="img/libreria.svg" alt=""> La tua libreria</a></li>
             </ul>
           </div>
-          <div class="space">
-            <h2>PLAYLIST</h2>
+          <div class="space hidden-xs">
+            <h3>PLAYLIST</h3>
           </div>
-          <div class="middle">
+          <div class="middle hidden-xs">
             <ul class="playlist">
-              <li><a href="#"><i class="fas fa-plus-square"></i> Home</a></li>
+              <li><a href="#"><i class="fas fa-plus-square"></i> Crea Playlist</a></li>
               <li><a href="#">Nome playlist</a></li>
               <li><a href="#">Nome playlist</a></li>
               <li><a href="#">Nome playlist</a></li>
@@ -38,7 +52,20 @@
               <li><a href="#">Nome playlist</a></li>
             </ul>
           </div>
-          <div class="bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          <div class="bottom">
+            <div class="download text-center">
+              <a class="hidden-sm hidden-md hidden-lg" href="#"><img src="img/download.svg" alt=""></a>
+            </div>
+            <div class="profile text-center">
+              <a class="hidden-sm hidden-md hidden-lg" href="#"><img src="img/profile.svg" alt=""></a>
+            </div>
+            <div class="bottom-up hidden-xs">
+              <a href="#"><img src="img/download.svg" alt=""> Installa App</a>
+            </div>
+            <div class="bottom-down hidden-xs">
+              <a href="#"><img src="img/profile.svg" alt="">
+               Guy Roger</a>
+            </div>
           </div>
         </div>
         <div class="main_right">
