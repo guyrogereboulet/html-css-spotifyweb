@@ -130,6 +130,7 @@ body {
 .main_right {
   width: calc(100% - 320px);
   height: calc(100% - 90px);
+  margin-top: 90px;
   margin-left: 320px;
   margin-bottom: 90px;
   padding: 20px;
@@ -150,10 +151,21 @@ body {
   padding: 10px;
 }
 
-.btn {
+.bottone {
   display: inline-block;
-  background-color: white;
-  font-size: 20px;
+  background-color: black;
+  font-size: 10px;
+  border-radius: 20px;
+  padding:10px;
+  width: 200px;
+  border: 1px solid white;
+  text-align: center;
+
+}
+
+.banner .bottone {
+  text-decoration: none;
+  color: white;
 }
 
 /*FOOTER*/
@@ -163,7 +175,7 @@ footer {
   bottom: 0;
   width: 100%;
   height:90px;
-  background-color: blue;
+  background-color: black;
 }
 
 .footer-left:after {
@@ -173,7 +185,7 @@ footer {
 }
 
 .footer-left {
-  background-color: purple;
+  /* background-color: purple; */
   line-height: 50px;
   padding: 20px;
 }
@@ -256,6 +268,35 @@ footer {
 
 .time-line {
   width: 300px;
+  margin: 10px;
+  height: 3px;
+  background-color: white;
+}
+
+
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  list-style: none;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.footer-right-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  list-style: none;
+  color: white;
+}
+
+.footer-right-icon li {
+  padding: 10px;
+}
+
+.line {
+  width: 100px;
   margin: 10px;
   height: 3px;
   background-color: white;
