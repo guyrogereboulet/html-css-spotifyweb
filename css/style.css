@@ -331,7 +331,11 @@ a.lime_left {
   width: 200px;
   border: 1px solid white;
   text-align: center;
+}
 
+.bottone:hover {
+  padding: 12px;
+  font-size: 12px;
 }
 
 .banner .bottone {
@@ -342,6 +346,7 @@ a.lime_left {
 /*FOOTER*/
 footer {
   position: fixed;
+  z-index: 3;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -506,13 +511,17 @@ footer {
   color: white;
 }
 
+.footer-right-icon .time-line-container {
+  width: 150px;
+  margin: 10px;
+}
+
 .footer-right-icon li {
   padding: 10px;
 }
 
-.line {
-  width: 100px;
-  margin: 10px;
+.time-line-container .line {
+  width: 30px;
   height: 3px;
   background-color: white;
 }
