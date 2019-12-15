@@ -153,7 +153,6 @@ a.lime_left {
   font-weight: bold;
   padding: 10px;
   font-size: 15px;
-  height: 20px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -163,7 +162,6 @@ a.lime_left {
   font-weight: bold;
   padding: 10px;
   font-size: 15px;
-  height: 20px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -174,6 +172,20 @@ a.lime_left {
   align-items: center;
   flex-wrap: nowrap;
   margin-bottom: 50px;
+}
+
+.evidenza {
+  position: relative;
+}
+
+.evidenza:after {
+  position: absolute;
+  left: 35%;
+  content: "";
+  display: table;
+  height: 4px;
+  width: 40px;
+  background-color: lime;
 }
 
 .recently_played h2 {
