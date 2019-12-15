@@ -43,6 +43,11 @@ body {
   color: grey;
 }
 
+.main_left a:hover {
+  text-decoration: none;
+  color: white;
+}
+
 a.lime_left {
   border-left: 2px solid lime;
   font-weight: bold;
@@ -86,11 +91,12 @@ a.lime_left {
   width: 320px;
   text-align: left;
   padding-left: 5px;
+  padding-top: 10px;
   background-color: black;
 }
 
 .logo img {
-  height: 50px;
+  height: 40px;
 }
 
 .space {
@@ -107,7 +113,7 @@ a.lime_left {
 }
 
 .bottom {
-  /* background-color: orange; */
+  padding: 10px;
 }
 
 .bottom-up {
@@ -153,7 +159,7 @@ a.lime_left {
 }
 
 .flex_container_menu a:hover {
-  color:grey;
+  color:white;
   font-weight: bold;
   padding: 10px;
   font-size: 15px;
@@ -167,6 +173,7 @@ a.lime_left {
   justify-content:center;
   align-items: center;
   flex-wrap: nowrap;
+  margin-bottom: 50px;
 }
 
 .recently_played h2 {
@@ -327,7 +334,7 @@ footer {
   bottom: 0;
   width: 100%;
   height:90px;
-  background-color: black;
+  background-color: #282828;
 }
 
 .footer-left:after {
@@ -389,10 +396,23 @@ footer {
   justify-content: space-between;
 }
 
+.footer-left i:hover {
+  font-size: 105%
+}
+
+.footer-center-icon i:hover {
+  font-size: 105%;
+}
+
+.footer-right i:hover {
+  font-size: 105%
+}
+
 .footer-center {
   padding: 5px;
   color:white;
 }
+
 
 .footer-center-icon {
   line-height: 20px;
@@ -420,11 +440,40 @@ footer {
   justify-content: center;
 }
 
-.time-line {
+
+.time-line-container {
   width: 300px;
   margin: 10px;
   height: 3px;
+  background-color: grey;
+}
+
+.time-line {
+  position: relative;
+  width: 100px;
+  height: 3px;
   background-color: white;
+}
+
+.cerchio {
+  visibility: hidden;
+  position: absolute;
+  top: -150%;
+  right:0;
+  color: white;
+}
+
+.time-line-container:hover .cerchio {
+ visibility: visible;
+}
+
+.time-line-container:hover {
+ visibility: visible;
+ background-color: black;
+}
+
+.time-line-container:hover .time-line {
+ background-color: lime;
 }
 
 
@@ -514,6 +563,7 @@ footer {
     display: flex;
     align-items: center;
     position: fixed;
+    z-index: 4;
     justify-content: flex-end;
     top: 0;
     right: 0;
@@ -544,10 +594,16 @@ footer {
   }
 
   .time-line {
-    width: 100px;
-    margin: 10px;
+    width: 30px;
     height: 3px;
     background-color: white;
+  }
+
+  .time-line-container {
+    width: 90px;
+    margin: 10px;
+    height: 3px;
+    background-color: grey;
   }
 
   .flex_album_container_two .flex_item{
@@ -576,10 +632,16 @@ footer {
   }
 
   .time-line {
-    width: 150px;
-    margin: 10px;
+    width: 60x;
     height: 3px;
     background-color: white;
+  }
+
+  .time-line-container {
+    width: 180px;
+    margin: 10px;
+    height: 3px;
+    background-color: grey;
   }
 
   .flex_album_container_two .flex_item{
@@ -616,10 +678,16 @@ footer {
   }
 
   .time-line {
+    width: 100px;
+    height: 3px;
+    background-color: white;
+  }
+
+  .time-line-container {
     width: 300px;
     margin: 10px;
     height: 3px;
-    background-color: white;
+    background-color: grey;
   }
 
   .flex_album_container_two .flex_item{
