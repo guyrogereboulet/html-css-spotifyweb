@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-.display_none {
-  display: none;
-}
+
 
 
 /* FIXED */
@@ -125,7 +123,6 @@ body {
 }
 
 
-
 /*MAIN - RIGHT */
 .main_right {
   width: calc(100% - 320px);
@@ -135,6 +132,45 @@ body {
   margin-bottom: 90px;
   padding: 20px;
 }
+
+.flex_container_menu a {
+  color:grey;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 12px;
+  height: 20px;
+  text-decoration: none;
+}
+
+.flex_container_menu {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.recently_played h2 {
+  color: white;
+  font-weight: bold;
+}
+
+.flex_album_container img {
+  height: 200px;
+  padding: 5px;
+}
+
+.flex_album_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  margin: auto;
+}
+
+.flex_album_container .one {
+  flex-basis: calc(100% / 6)
+}
+
 
 /*BANNER*/
 .banner {
@@ -306,6 +342,7 @@ footer {
 /* MEDIA QUERIES */
 /* Extra small devices (phones, less than 768px) */
 @media all and (max-width: 768px) {
+  /*MAIN - LEFT */
   .main_left {
     display: flex;
     flex-direction: column;
@@ -369,14 +406,75 @@ footer {
     padding: 10px;
   }
 
+  /*MAIN - RIGHT */
+  .flex_container_menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+
+
 
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { ... }
+ @media all and (min-width: 768px) and (max-width: 992px)  {
+  /*MAIN - RIGHT */
+ .flex_container_menu {
+  flex-wrap: wrap;
+}
 
+ .menu_main_right a {
+  color:grey;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  height: 20px;
+  text-decoration: none;
+}
+
+
+}
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  /*MAIN - RIGHT */
+  .flex_container_menu {
+    flex-wrap: wrap;
+  }
+
+  .menu_main_right a {
+    color:grey;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    height: 20px;
+    text-decoration: none;
+  }
+
+  .flex_album_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .flex_album_container .one {
+    flex-basis: calc(100% / 3)
+  }
+
+
+}
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
+@media all and (min-width: 1200px)  {
+  /*MAIN - RIGHT */
+  .flex_container_menu {
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+}
